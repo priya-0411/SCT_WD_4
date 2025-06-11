@@ -1,0 +1,108 @@
+
+    * {
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      margin: 0;
+      background: linear-gradient(120deg, #0f0c29, #302b63, #24243e);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      transition: background 0.5s ease;
+    }
+    body.light {
+      background: #f1f1f1;
+      color: #000;
+    }
+    .container {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(10px);
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    h2 {
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+    input[type="text"], input[type="datetime-local"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+      margin: 10px 0;
+      font-size: 14px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background: linear-gradient(90deg, #00c6ff, #bc00dd);
+      border: none;
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+    button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #bc00dd;
+    }
+    .task {
+      background: rgba(255, 255, 255, 0.1);
+      margin-top: 15px;
+      padding: 10px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: all 0.3s ease;
+    }
+    .task.completed {
+      opacity: 0.5;
+      text-decoration: line-through;
+    }
+    .tick {
+      color: #00ff00;
+      cursor: pointer;
+      font-size: 18px;
+      margin-right: 10px;
+    }
+    .delete {
+      background: #ff4d4d;
+      padding: 5px 10px;
+      border-radius: 6px;
+      color: white;
+      font-size: 13px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .delete:hover {
+      background: #e60000;
+    }
+    .top-actions {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
+      gap: 10px;
+    }
+    .small-btn {
+      padding: 8px;
+      font-size: 12px;
+      flex: 1;
+      background: #444;
+    }
+    body.light .container,
+    body.light .task {
+      background: rgba(0, 0, 0, 0.05);
+      color: #000;
+    }
+  
